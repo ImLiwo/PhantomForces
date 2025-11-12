@@ -1,4 +1,4 @@
--- https://discord.gg/tUEJZYvF9d
+-- https://discord.gg/liwohub
 -- known to work on wave, nihon, awp.gg, syn z, seliware
 -- known to work on wave, nihon, awp.gg, syn z, seliware, sirhurt
 local isLimited = ...
