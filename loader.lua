@@ -3,7 +3,7 @@
 -- known to work on wave, nihon, awp.gg, syn z, seliware, sirhurt
 local isLimited = ...
 local environment = identifyexecutor and identifyexecutor() or ""
-local source = game:HttpGet("https://raw.githubusercontent.com/iRay888/wapus/refs/heads/main/" .. (isLimited and "source-limited.lua" or "source.lua"))
+local source = game:HttpGet("https://raw.githubusercontent.com/ImLiwo/PhantomForces/refs/heads/main/" .. (isLimited and "source-limited.lua" or "source.lua"))
 if string.find(string.lower(environment), "wave") and not executed then
     run_on_actor(get_deleted_actors()[1], source)
 elseif getfflag and string.find(string.lower(tostring(getfflag("DebugRunParallelLuaOnMainThread"))), "true") and not executed then
@@ -31,7 +31,7 @@ elseif string.find(string.lower(environment), "zenith") and not executed then
         ]])
     end
 else
-    queue_on_teleport(game:HttpGet("https://raw.githubusercontent.com/iRay888/wapus/refs/heads/main/hook.lua") .. "task.wait(5);" .. source)
+    queue_on_teleport(game:HttpGet("https://raw.githubusercontent.com/ImLiwo/PhantomForces/refs/heads/main/hook.lua") .. "task.wait(5);" .. source)
     setfflag("DebugRunParallelLuaOnMainThread", "True")
     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
 end
